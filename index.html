@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		<form id="form" action="" class="form-date">
+			<input id="datepicker" type="text" class="trade-input trade-input--padding" placeholder="Выберите дату" required>
+			<i class="fa fa-calendar calendar" aria-hidden="true"></i>
+		</form>
+
+		<div class="tablo clearfix">
+			<div class="tablo_title">Обмен валюты</div>
+			<div class="tablo_col tablo_col--1">
+				<div class="tablo_usd">usd</div>
+				<div class="tablo_eur">eur</div>
+			</div>
+			<div class="tablo_col tablo_col--2">
+				<div class="tablo_by">Покупка</div>
+				<div id="usdBy" class="tablo_value tablo_value--1">88.88</div>
+				<div id="eurBy" class="tablo_value tablo_value--2">88.88</div>
+			</div>
+			<div class="tablo_col tablo_col--3">
+				<div class="tablo_sale">Продажа</div>
+				<div id="usdSale" class="tablo_value tablo_value--3">88.88</div>
+				<div id="eurSale" class="tablo_value tablo_value--4">88.88</div>
+			</div>
+		</div>
+
+		<form id="form" action="" class="form-info">
+			<input type="text" class="trade-input" placeholder="Ф.И.О." required pattern="[A-Za-zА-Яа-яЁё]{3,}">
+			<input type="text" class="trade-input" placeholder="Login" required pattern="^[a-zA-Z0-9]+$">
+			<input type="password" class="trade-input" placeholder="Пароль" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+			<div class="trade-select-container">
+				<select name="" id="trade-select" class="trade-input">
+					<option value="disabled" disabled selected>Права</option>
+					<option value="">Пользователь</option>
+					<option value="">Оператор</option>
+					<option value="">Администратор</option>
+				</select>
+			</div>
+			<button class="trade-btn">Добавить пользователя</button>
+		</form>
+	</div>
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
